@@ -695,6 +695,7 @@ server:
       # YAML-formatted multi-line templated string map of the annotations to apply
       # to the active service.
       annotations: 
+        service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
         service.beta.kubernetes.io/aws-load-balancer-internal: "true"
     # Enable or disable the vault-standby service, which selects Vault pods that
     # have labeled themselves as a cluster follower with `vault-active: "false"`.
